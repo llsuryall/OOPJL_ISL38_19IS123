@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class b_prime_no{
-	static boolean is_prime(long prime){
+	public static boolean is_prime(long prime){
 		if(prime%2==0){
 			if(prime!=2){
 				return false;

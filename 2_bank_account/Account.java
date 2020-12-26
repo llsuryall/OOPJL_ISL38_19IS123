@@ -9,13 +9,14 @@ public class Account{
 		Scanner sc=new Scanner(System.in);
 		System.out.print("Enter the account no - ");
 		this.accno=sc.nextLong();
-		this.name=sc.nextLine();
+		sc.nextLine();
 		System.out.print("Enter the name of the customer - ");
 		this.name=sc.nextLine();
 		System.out.print("Enter the phone no - ");
 		this.phone_no=sc.nextLong();
 		System.out.print("Enter the initial balance - ");
 		this.balance=sc.nextFloat();
+		sc.nextLine();
 	}
 	public void deposit(float val){
 		if(val>0){

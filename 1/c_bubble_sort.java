@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class c_bubble_sort{
-	static int[] bubble_sort(int[] ar){
+	public static int[] bubble_sort(int[] ar){
 		int n=ar.length,temp=0;
 		while(n>0){
 			for(int i=0;i<n-1;i++){

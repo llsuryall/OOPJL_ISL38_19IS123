@@ -3,7 +3,7 @@ import java.util.Scanner;
 class a_fib_series{
 	private static short n=0;
 	private static long first=0L,second=1L,temp=0L;
-	static void fib_recursion(){
+	public static void fib_recursion(){
 		if(n>0){
 			System.out.print(first+" ");
 			temp=first;
@@ -13,11 +13,11 @@ class a_fib_series{
 			fib_recursion();
 		}
 	}
-	static void reset(){
+	public static void reset(){
 		first=0;
 		second=1;
 	}
-	static void fib_no_recursion(short n){
+	public static void fib_no_recursion(short n){
 		long first=0,second=1,temp=0;
 		while(n>0){
 			System.out.print(first+" ");
@@ -30,7 +30,7 @@ class a_fib_series{
 	}
 	public static void main(String args[]){
 		Scanner sc=new Scanner(System.in);
-		System.out.print("Enter no of fib terms to print- ");
+		System.out.print("Enter no. of fib terms to print - ");
 		n=sc.nextShort();
 		short ncp=n;
 		if(n>0){
@@ -38,7 +38,7 @@ class a_fib_series{
 			fib_recursion();
 			reset();
 			System.out.println("");
-			System.out.println("Without using recursion-");
+			System.out.println("Without recursion-");
 			fib_no_recursion(ncp);
 		}
 	}

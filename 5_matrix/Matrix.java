@@ -78,7 +78,7 @@ public class Matrix{
 				return res;
 			}
 			else{
-				System.out.println("Dimension Error! Cannot Multiply matrices with this dimensions!");
+				System.out.println("Dimension Error! Cannot Multiply matrices with these dimensions!");
 				return null;
 			}
 		}
